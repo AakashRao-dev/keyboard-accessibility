@@ -1,0 +1,71 @@
+main {
+  max-width: 500px;
+  margin: 2rem auto;
+  display: grid;
+  background: #eeeeee;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+dialog {
+  padding: 1rem 3rem;
+  background: #f7f7f7;
+  max-width: 64ch;
+  margin: 2rem auto;
+}
+
+.close {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 0;
+  right: 0.4rem;
+}
+
+/* OTHER STYLES */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0ebac5;
+  color: #222222;
+  font-family: system-ui, serif;
+  line-height: 1.5;
+  padding: 0 1rem 2rem;
+}
+
+h1 {
+  font-size: clamp(22px, 7vw, 52px);
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 0.8rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  font-weight: bold;
+  color: tomato;
+}
+
+button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  padding: 0.6rem 0.8rem;
+  border: 2px solid transparent;
+  background-color: #111111;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  justify-self: end;
+}
+
+button:focus {
+  outline: 4px solid tomato;
+}

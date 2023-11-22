@@ -1,0 +1,91 @@
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.toolbar {
+  display: flex;
+  gap: 0.3rem;
+  margin-top: 2rem;
+  width: fit-content;
+  background: #e0dfdf;
+}
+
+.toolbar button {
+  font-size: 16px;
+  padding: 0.8rem 1.6rem;
+  border: none;
+  background: #e0dfdf;
+}
+
+button:focus {
+  outline: 2px solid tomato;
+  background: #222222;
+  color: #f7f7f7;
+}
+
+.content-box {
+  background: #f7f7f7;
+  padding: 2rem;
+  width: 100%;
+}
+
+.content {
+  display: none;
+}
+
+.content > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.content.active {
+  display: block;
+}
+
+.cta-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.6rem 0.8rem;
+  background-color: #222222;
+  color: #ffffff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.cta-btn:focus-visible {
+  outline: 2px solid tomato;
+}
+
+/* OTHER STYLES */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  padding: 2em;
+  background-color: #0ebac5;
+}
+
+h1 {
+  font-size: clamp(22px, 6vw, 52px);
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.instructions {
+  font-size: 1rem;
+  width: fit-content;
+  margin: 0 auto 3rem;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+}

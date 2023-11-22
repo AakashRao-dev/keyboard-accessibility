@@ -1,0 +1,66 @@
+.screen-reader-shortcut {
+  position: absolute;
+  top: -1000em;
+}
+
+.screen-reader-shortcut:focus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  padding: 1em;
+  background-color: #222222;
+  color: white;
+  text-decoration: none;
+}
+
+/* OTHER STYLES */
+body {
+  padding: 2em;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #0ebac5;
+  color: #333333;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  padding: 1em;
+  background-color: #eef5ff;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: clamp(28px, 3vw, 52px);
+  text-align: center;
+}
+
+h2 {
+  font-size: clamp(20px, 2vw, 32px);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  border: 2px solid #999999;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+  /* Light gray background */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  /* Tomato Red thumb */
+  background-color: tomato;
+  /* Transparent border for visibility in WHCM */
+  border: 2px solid transparent;
+}

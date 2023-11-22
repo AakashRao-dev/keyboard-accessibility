@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Custom Tab Component</title>
+  </head>
+  <body>
+    <h1>Custom Tab Component</h1>
+
+    <div class="instructions">
+      (click here first, press <code>TAB</code>, then press Arrow ➡️)
+    </div>
+
+    <div class="container">
+      <div role="toolbar" class="toolbar">
+        <button tabindex="0" data-content="tab1">Tab 1</button>
+        <button tabindex="-1" data-content="tab2">Tab 2</button>
+        <button tabindex="-1" data-content="tab3">Tab 3</button>
+        <button tabindex="-1" data-content="tab4">Tab 4</button>
+      </div>
+
+      <div class="content-box">
+        <!--  TAB-1 CONTENT  -->
+        <div id="tab1" class="content active">
+          <h2>Live Interactive Browser Compatibility Testing</h2>
+          <p>
+            Perform live interactive multi browser testing on browser and
+            operating system environment of your choice. Get instant access to
+            real machines running.
+          </p>
+          <a
+            class="cta-btn"
+            href="https://www.lambdatest.com/online-browser-testing"
+            target="_blank"
+            >More about Browser Testing</a
+          >
+        </div>
+
+        <!--  TAB-2 CONTENT  -->
+        <div id="tab2" class="content">
+          <h2>Online Selenium Test Automation At Scale</h2>
+          <p>
+            Perform automated browser tests on a scalable, secure, and reliable
+            online Selenium grid. Execute Selenium scripts to perform automated
+            cross browser testing across 3000+ browsers.
+          </p>
+          <a
+            class="cta-btn"
+            href="https://www.lambdatest.com/selenium-automation"
+            target="_blank"
+            >More about Selenium Testing</a
+          >
+        </div>
+
+        <!--  TAB-3 CONTENT  -->
+        <div id="tab3" class="content">
+          <h2>Run Cypress Test Automation Scripts On Cloud</h2>
+          <p>
+            Execute & analyse Cypress test scripts online. Deploy quality builds
+            faster with 40+ browser versions on cloud. A reliable, scalable,
+            secure and high performing test execution platform built for scale.
+          </p>
+          <a
+            class="cta-btn"
+            href="https://www.lambdatest.com/cypress-testing"
+            target="_blank"
+            >More about Cypress Testing</a
+          >
+        </div>
+
+        <!--  TAB-4 CONTENT  -->
+        <div id="tab4" class="content">
+          <h2>HyperExecute, Blazing Fast Next-Gen Testing Cloud</h2>
+          <p>
+            Experience accelerated test execution at unmatched speeds on a
+            massively scalable cloud infrastructure. A next-gen test execution
+            platform that can match your local test execution speeds and costs
+            as much as a flexible spot instance cloud.
+          </p>
+          <a
+            class="cta-btn"
+            href="https://www.lambdatest.com/hyperexecute"
+            target="_blank"
+            >More about HyperExecute</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

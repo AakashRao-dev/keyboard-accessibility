@@ -1,0 +1,60 @@
+/* Selecting focusable elements and defining CSS Variables for outline  */
+:is(a, button, input, textarea, summary) {
+  --outline-size: max(2px, 0.08em);
+  --outline-style: solid;
+  --outline-color: currentColor;
+}
+
+/* ==== USING :focus-visible TO APPLY OUTLINE ====  */
+:is(a, button, input, textarea, summary):focus-visible {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, --outline-size);
+  box-shadow: 0 0 12px currentcolor;
+}
+
+button {
+  --outline-offset: -0.15em;
+  --outline-style: dashed;
+}
+
+/* OTHER STYLES */
+.btn {
+  font-size: 1.6rem;
+  padding: 1em 2em;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.instructions {
+  font-size: 1.1rem;
+  width: fit-content;
+  margin: 0 auto 3rem;
+  line-height: 1.5;
+  background: #f7f7f7;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #0ebac5;
+  padding: 2rem;
+}
+
+.main {
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.second {
+  background: #ffffff;
+  color: #111111;
+}
